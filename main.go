@@ -1,9 +1,3 @@
-// Copyright © 2016 Alan A. A. Donovan & Brian W. Kernighan.
-// License: https://creativecommons.org/licenses/by-nc-sa/4.0/
-
-// See page 115.
-
-// Issueshtml prints an HTML table of issues matching the search terms.
 package main
 
 import (
@@ -14,8 +8,6 @@ import (
 
 	"html/template"
 )
-
-//!+template
 
 var itemslist = template.Must(template.New("itemslist").Parse(`
 
