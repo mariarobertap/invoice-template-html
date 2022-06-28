@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<style>
+			body {
+				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				text-align: center;
+				color: #777;
+			}
+
+			body h1 {
+				font-weight: 300;
+				margin-bottom: 0px;
+				padding-bottom: 0px;
+				color: #000;
+			}
+
+			body h3 {
+				font-weight: 300;
+				margin-top: 10px;
+				margin-bottom: 20px;
+				font-style: italic;
+				color: #555;
+			}
+
+			body a {
+				color: #06f;
+			}
+	
+
+			.invoice-box {
+				max-width: 800px;
+				margin: auto;
+				padding: 30px;
+				border: 1px solid #eee;
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+				font-size: 16px;
+				line-height: 24px;
+				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+				color: rgb(41, 39, 39);
+			}
+
+			.invoice-box table {
+				width: 100%;
+				line-height: inherit;
+				text-align: left;
+				border-collapse: collapse;
+			}
+
+			.invoice-box table td {
+				padding: 5px;
+				vertical-align: top;
+
+			}
+
+			.invoice-box table tr td:nth-child(2) {
+				text-align: right;
+			}
+			#testando {
+				text-align: right;
+			}
+			#testando2 {
+				text-align: left;
+			}
+
+			.invoice-box table tr.top table td {
+				padding-bottom: 20px;
+			}
+
+			.invoice-box table tr.top table td.title {
+				font-size: 45px;
+				line-height: 45px;
+				color: rgb(216, 13, 13);
+			
+			}
+
+			.invoice-box table tr.information table td {
+				padding-bottom: 40px;
+			}
+
+			.invoice-box table tr.heading td {
+				background: rgb(161, 203, 223);
+				border-bottom: 1px solid #ddd;
+				font-weight: bold;
+			}
+
+			.invoice-box table tr.details td {
+				padding-bottom: 20px;
+			}
+
+			.invoice-box table tr.item td {
+				border-bottom: 1px solid #eee;
+			}
+
+			.invoice-box table tr.item.last td {
+				border-bottom: none;
+			}
+
+			.invoice-box table tr.total td:nth-child(4) {
+				border-top: 2px solid #eee;
+				font-size: large;
+				font-weight: bold;
+			}
+
+			.title-font  {
+				font-style: italic;
+			}
+
+			
+
+
+
+		
+		</style>
+	</head>
+	<body>
+
+
+		<div class="invoice-box">
+			<table>
+				<tr class="top">
+					<td colspan="2">
+						<table >
+							<tr>
+								<td class="title">
+									<img src="" alt="VidroGlass" style="width: 100%; max-width: 300px" />
+								</td>
+								<td>
+									J.  - Vidraçaria.<br />
+									12345 Sunny Road<br />
+									Sunnyville, TX 12345
+								</td>
+			
+
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+				<tr class="information">
+					<td colspan="2">
+						<table >
+							
+		
+							<tr>
+								
+								<td>
+									Cliente:  Maria Roberta<br />
+									Endereço: Rua imaginaria, numero 1829.<br />
+									Bairro:   Bairro X.<br />
+									Cidade:   Campo Mourão .<br />
+									Telefone: +55 (44) 918290381<br />
+
+								</td>
+						
+
+								<td>
+									Nota #: 123<br />
+									Criada: Julho 27, 2022<br />
+									Vencimento: Julho 27, 2022<br />
+									<input type="checkbox" id="scales" name="Pedido" checked>
+                                    <label for="scales">Pedido</label>
+									<input type="checkbox" id="scales" name="Orçamento">
+                                    <label for="scales">Orçamento</label>
+								</td>
+					
+							</tr>
+						</table>
+					</td>
+				</tr>
+
+			</table>
+		
+			<table>
+				<tr class="heading">
+					<td>Metodo de pagamento</td>
+					<td></td>
+					<td></td>
+	
+	
+				</tr>
+				<tr class="details">
+					<td>Crédito</td>
+	
+					<td></td>
+				</tr>
+			</table>
+			<table>
+	
+				<tr class="heading">
+					<td>Quantidade</td>
+					<td id="testando2">Item</td>
+					<td Id="testando2">Preço Unitário</td>
+					<td>Preço Total</td>
+
+
+				</tr>
+				
+				<tr class="item">
+					<td>1</td>
+					<td id="testando2">Vidro fume 8mm 50x114</td>
+					<td Id="testando2">R$300.00</td>
+					<td>R$300.00</td>
+
+
+				</tr>
+	
+				<tr class="total">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td>Total: $385.00</td>
+				</tr>
+			</table>
+		</div>
+		
+	</body>
+</html>
