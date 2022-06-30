@@ -8,6 +8,7 @@
 				font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
 				text-align: center;
 				color: #777;
+				font-size: large;
 			}
 
 			body h1 {
@@ -67,9 +68,11 @@
 
 			.invoice-box table tr.top table td {
 				padding-bottom: 20px;
+				
+
 			}
 
-			.invoice-box table tr.top table td.title {
+			.invoice-box .title {
 				font-size: 45px;
 				line-height: 45px;
 				color: rgb(216, 13, 13);
@@ -78,20 +81,24 @@
 
 			.invoice-box table tr.information table td {
 				padding-bottom: 40px;
+				font-size: large;
 			}
 
 			.invoice-box table tr.heading td {
 				background: rgb(161, 203, 223);
 				border-bottom: 1px solid #ddd;
 				font-weight: bold;
+				font-size: large;
 			}
 
 			.invoice-box table tr.details td {
+				font-size: large;
 				padding-bottom: 20px;
 			}
 
 			.invoice-box table tr.item td {
 				border-bottom: 1px solid #eee;
+				font-size: large;
 			}
 
 			.invoice-box table tr.item.last td {
@@ -100,7 +107,7 @@
 
 			.invoice-box table tr.total td:nth-child(4) {
 				border-top: 2px solid #eee;
-				font-size: large;
+				font-size: larger;
 				font-weight: bold;
 			}
 
@@ -108,16 +115,12 @@
 				font-style: italic;
 			}
 
-			
-
-
-
-		
+			.line-3 {
+				background: rgb(158, 40, 40);
+			}
 		</style>
 	</head>
 	<body>
-
-
 		<div class="invoice-box">
 			<table>
 				<tr class="top">
@@ -125,37 +128,28 @@
 						<table >
 							<tr>
 								<td class="title">
-									<img src="" alt="VidroGlass" style="width: 100%; max-width: 300px" />
+									<b style="width: 100%; max-width: 300px" >VidroGlass</b>
 								</td>
 								<td>
 									J.  - Vidraçaria.<br />
 									12345 Sunny Road<br />
 									Sunnyville, TX 12345
 								</td>
-			
-
 							</tr>
 						</table>
 					</td>
 				</tr>
-
 				<tr class="information">
 					<td colspan="2">
 						<table >
-							
-		
 							<tr>
-								
 								<td>
-									Cliente:  Maria Roberta<br />
-									Endereço: Rua imaginaria, numero 1829.<br />
-									Bairro:   Bairro X.<br />
-									Cidade:   Campo Mourão .<br />
-									Telefone: +55 (44) 918290381<br />
-
+									<b>Cliente:</b>Maria Roberta<br />
+									<b>Endereço:</b> Rua imaginaria, numero 1829.<br />
+									<b>Bairro:</b>Bairro X.<br />
+									<b>Cidade:</b>Campo Mourão .<br />
+									<b>Telefone:</b>+55 (44) 918290381<br />
 								</td>
-						
-
 								<td>
 									Nota #: 123<br />
 									Criada: Julho 27, 2022<br />
@@ -163,58 +157,56 @@
 									<input type="checkbox" id="scales" name="Pedido" checked>
                                     <label for="scales">Pedido</label>
 									<input type="checkbox" id="scales" name="Orçamento">
-                                    <label for="scales">Orçamento</label>
+									<label for="scales">Orçamento</label>							
 								</td>
-					
 							</tr>
+							<div class="line-3">
+								<hr>
+							</div>
 						</table>
 					</td>
-				</tr>
-
-			</table>
-		
 			<table>
 				<tr class="heading">
 					<td>Metodo de pagamento</td>
 					<td></td>
 					<td></td>
-	
-	
 				</tr>
 				<tr class="details">
 					<td>Crédito</td>
-	
 					<td></td>
 				</tr>
 			</table>
 			<table>
-	
 				<tr class="heading">
 					<td>Quantidade</td>
 					<td id="testando2">Item</td>
 					<td Id="testando2">Preço Unitário</td>
 					<td>Preço Total</td>
-
-
 				</tr>
-				
 				<tr class="item">
 					<td>1</td>
 					<td id="testando2">Vidro fume 8mm 50x114</td>
 					<td Id="testando2">R$300.00</td>
 					<td>R$300.00</td>
-
-
 				</tr>
-	
+				<tr class="item">
+					<td>1</td>
+					<td id="testando2">Vidro fume 8mm 50x114</td>
+					<td Id="testando2">R$300.00</td>
+					<td>R$300.00</td>
+				</tr>	<tr class="item">
+					<td>1</td>
+					<td id="testando2">Vidro fume 8mm 50x114</td>
+					<td Id="testando2">R$300.00</td>
+					<td>R$300.00</td>
+				</tr>
 				<tr class="total">
 					<td></td>
 					<td></td>
 					<td></td>
-					<td>Total: $385.00</td>
+					<td>Total: R$385.00</td>
 				</tr>
 			</table>
 		</div>
-		
 	</body>
 </html>
